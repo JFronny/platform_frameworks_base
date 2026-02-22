@@ -4971,9 +4971,10 @@ public class PackageInstallerSession extends IPackageInstallerSession.Stub {
                             throw new PackageManagerException(errorCode, msg);
                         }
 
-                        String msg = "Installation of " + mPackageName
-                                + " is blocked to prevent breaking gmscompat";
-                        throw new PackageManagerException(errorCode, msg);
+                        // String msg = "Installation of " + mPackageName
+                                // + " is blocked to prevent breaking gmscompat";
+                        //throw new PackageManagerException(errorCode, msg);
+                        break;
                     }
                     case PackageId.ANDROID_AUTO_NAME:
                     case PackageId.PIXEL_HEALTH_NAME:
